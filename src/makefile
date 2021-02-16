@@ -2,7 +2,7 @@ CFLAGS = -Wall
 
 #TODO link (-o) all object files into the executable myexe
 all: fileio.o utils.o proj_refactor_file.o
-	g++ -o myexe fileio.o utils.o proj_refactor_file.o
+	g++ -o myexe ../fileio/fileio.o ../utils/utils.o ../src/proj_refactor_file.o
 	
 	
 #rebuild object file if fileio.cpp, or fileio.h or constants.h changes
